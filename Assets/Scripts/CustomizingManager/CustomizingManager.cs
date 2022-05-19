@@ -249,7 +249,7 @@ public class CustomizingManager : SingleToneMaker<CustomizingManager>
 
     public void SaveShowHelmet()
     {
-        PlayerPrefs.SetString(mPlayerSprite.ShowKey, (!mPlayerSprite.ShowHelmet).ToString());
+        PlayerPrefs.SetString(mPlayerSprite.ShowKey, (mPlayerSprite.ShowHelmet).ToString());
     }
 
     public void LoadCostumeInfo()
@@ -299,6 +299,7 @@ public class CustomizingManager : SingleToneMaker<CustomizingManager>
                     break;
             }
         }
+        mPlayerSprite.ChangeHairHelmet();
     }
 
     // √ ±‚»≠

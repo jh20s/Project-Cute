@@ -125,6 +125,7 @@ public class SaveLoadManager : SingleToneMaker<SaveLoadManager>
             newInfo.Skilllock.Add(skillName, locked);
         }
         newInfo.DailyAddCount = 3;
+        newInfo.IsAdsPass = false;
         mIsCreate = false;
         SavePlayerInfoFile(newInfo);
         return newInfo;

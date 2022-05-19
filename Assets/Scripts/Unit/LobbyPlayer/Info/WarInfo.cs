@@ -180,4 +180,16 @@ public class WarInfo
         get { return mIsWarCutePotion; }
         set { mIsWarCutePotion = value; }
     }
+
+    // 전투 씬에 보낼 광고패스 적용 여부
+    [SerializeField]
+    private bool mIsAdsPass;
+    public bool IsAdsPass
+    {
+        get => mIsAdsPass;
+        set
+        {
+            mIsAdsPass = value;
+        }
+    }
 }

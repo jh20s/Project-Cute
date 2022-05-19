@@ -48,8 +48,11 @@ public class PlayerManager : SingleToneMaker<PlayerManager>
     [SerializeField]
     private float mMeleeDodgeCount;
     public float MeleeDodgeCount => mMeleeDodgeCount;
+    [SerializeField]
+    private bool mIsAdsPass;
+    public bool IsAdsPass => mIsAdsPass;
     // DEBUG용 맵 선택 오브젝트
-    public GameObject mSelectMap;
+    //public GameObject mSelectMap;
 
     private void Awake()
     {
@@ -114,7 +117,11 @@ public class PlayerManager : SingleToneMaker<PlayerManager>
         if (loadInfo.IsBossRelay)
         {
             MapManager.Instance.CurrentMapType = MapManager.MapType.BossRelay;
-            mSelectMap.SetActive(false);
+        }
+        else
+        {
+            // 맵 랜덤 선택
+            MapManager.Instance.RandMapSelect();
         }
         // 던전 버프 타입별 UI수정
         switch (loadInfo.WarDeongunBuffType)
@@ -132,6 +139,8 @@ public class PlayerManager : SingleToneMaker<PlayerManager>
         }
         // 귀여워지는 물약 사용 여부
         mIsCutePotion = loadInfo.IsWarCutePotion;
+        // 광고 패스 여부
+        mIsAdsPass = loadInfo.IsAdsPass;
     }
 
     private void InitPlayerLevelData()
@@ -156,7 +165,7 @@ public class PlayerManager : SingleToneMaker<PlayerManager>
     public void SettingGameStart()
     {
         mPlayer.GetComponent<PlayerAttack>().getProjectiles();
-        MapManager.Instance.MapSelect();
+        //MapManager.Instance.MapSelect();
         SpawnManager.Instance.InitAllSpawnData();
 
         string weaponType =

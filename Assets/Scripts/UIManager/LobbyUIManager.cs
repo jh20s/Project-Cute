@@ -101,6 +101,8 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
     private GameObject mBoxAnimationPannel;
     [SerializeField]
     private GameObject mGachaItemListPannel;
+    [SerializeField]
+    private GameObject mSoldOutPannel;
 
     [Header("훈련")]
     [SerializeField]
@@ -117,6 +119,15 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
     private GameObject mGuidePannel;
     [SerializeField]
     private bool mIsOpenGuidePannel;
+
+    [Header("크래딧")]
+    [SerializeField]
+    private GameObject mCreditPannel;
+    [SerializeField]
+    private bool mIsOpenCreditPannel;
+    [SerializeField]
+    private int mCurrentNamePage;
+
     #endregion
     void Start()
     {
@@ -245,9 +256,14 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
             GamePause();
             mIsOpenWareHousePannel = !mIsOpenWareHousePannel;
             if (mIsOpenWareHousePannel)
+            {
                 ClickSound(LobbyMusicManager.AudioType.Choice);
+                mWareHousePannel.transform.GetChild(2).GetChild(0).GetChild(0)
+                    .gameObject.SetActive(GameObject.Find("LobbyPlayer").GetComponent<PlayerSprite>().ShowHelmet);
+            }
             else
                 ClickSound(LobbyMusicManager.AudioType.Cancel);
+
             mWareHousePannel.SetActive(mIsOpenWareHousePannel);
         }
         // 플레이어가 던전 입구와 상호작용 대기중 이라면
@@ -271,6 +287,7 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
         {
             GamePause();
             ClickSound(LobbyMusicManager.AudioType.Choice);
+            mSoldOutPannel.SetActive(GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.IsAdsPass);
             mSupplyShopPannel.SetActive(true);
         }
         // 플레이어가 훈련교관과 상호작용 대기중 이라면
@@ -363,8 +380,18 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
 
             if (GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.DailyAddCount > 0)
             {
-                AdmobManager.Instance.Show();
-                mDeongunStartPannel.transform.GetChild(2).GetChild(2).gameObject.SetActive(false);
+                // 광고 패스 구매 시
+                if (GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.IsAdsPass)
+                {
+                    DeongunStartManager.Instance.DrawBuff();
+                    OpenDoengunPannel();
+                    GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.DailyAddCount--;
+                }
+                else
+                {
+                    AdmobManager.Instance.Show();
+                    mDeongunStartPannel.transform.GetChild(2).GetChild(2).gameObject.SetActive(false);
+                }
             }
             else
             {
@@ -669,7 +696,46 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
     {
         SceneManager.LoadScene("CustomeScene");
     }
-
+    public void ClickCreditPannel()
+    {
+        mIsOpenCreditPannel = !mIsOpenCreditPannel;
+        if (mIsOpenCreditPannel)
+            ClickSound(LobbyMusicManager.AudioType.Choice);
+        else
+            ClickSound(LobbyMusicManager.AudioType.Cancel);
+        mCreditPannel.SetActive(mIsOpenCreditPannel);
+    }
+    public void ClickNamePannel(bool _isOn)
+    {
+        ClickSound(LobbyMusicManager.AudioType.Choice);
+        mCreditPannel.transform.GetChild(0).GetChild(0).gameObject.SetActive(_isOn);
+        mCreditPannel.transform.GetChild(2).gameObject.SetActive(_isOn);
+        mCreditPannel.transform.GetChild(1).GetChild(0).gameObject.SetActive(!_isOn);
+        mCreditPannel.transform.GetChild(3).gameObject.SetActive(!_isOn);
+    }
+    public void ClickNextCreditNamePannel(bool _isNext)
+    {
+        if (_isNext)
+            mCurrentNamePage++;
+        else
+            mCurrentNamePage--;
+        switch (mCurrentNamePage)
+        {
+            case 0:
+                mCreditPannel.transform.GetChild(2).GetChild(4).gameObject.SetActive(false);
+                break;
+            case 1:
+                mCreditPannel.transform.GetChild(2).GetChild(4).gameObject.SetActive(true);
+                mCreditPannel.transform.GetChild(2).GetChild(3).gameObject.SetActive(true);
+                break;
+            case 2:
+                mCreditPannel.transform.GetChild(2).GetChild(3).gameObject.SetActive(false);
+                break;
+        }
+        for (int i = 0; i < 3; i++)
+            mCreditPannel.transform.GetChild(2).GetChild(i).gameObject.SetActive(false);
+        mCreditPannel.transform.GetChild(2).GetChild(mCurrentNamePage).gameObject.SetActive(true);
+    }
     // 테스트용
     public void ClickUnlock()
     {

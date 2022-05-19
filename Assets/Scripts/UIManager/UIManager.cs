@@ -121,6 +121,18 @@ public class UIManager : SingleToneMaker<UIManager>
     private GameObject mFirstEndingPannel;
     [SerializeField]
     private GameObject mSecondEndingPannel;
+
+    [Header("크래딧")]
+    [SerializeField]
+    private GameObject mCreditPannel;
+    [SerializeField]
+    private bool mIsOpenCreditPannel;
+    [SerializeField]
+    private int mCurrentNamePage;
+
+    [Header("경고창")]
+    [SerializeField]
+    private GameObject mAlertEnterPannel;
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -152,6 +164,16 @@ public class UIManager : SingleToneMaker<UIManager>
     /*
      *  Todo : 만들다보니 비슷한 기능들이여서 추후에 리팩토링필요
      */
+    public void OpenAlertEnterPannel(string _desc)
+    {
+        ClickSound(LobbyMusicManager.AudioType.Error);
+        mAlertEnterPannel.transform.GetChild(2).GetComponent<Text>().text = _desc;
+        mAlertEnterPannel.SetActive(true);
+    }
+    public void CloseAlertEnterPannel()
+    {
+        mAlertEnterPannel.SetActive(false);
+    }
     public void ClickedGamePause()
     {
         // 일시정지 상태에서 클릭
@@ -301,7 +323,7 @@ public class UIManager : SingleToneMaker<UIManager>
     {
         // TODO : 광고 시청 후 부활 가능
         // 광고 패스 구매 시
-        if (mIsAdSkip)
+        if (PlayerManager.Instance.IsAdsPass)
         {
             Ressureection(mGaneOverFirstResurrectionPannel);
         }
@@ -450,13 +472,6 @@ public class UIManager : SingleToneMaker<UIManager>
                 break;
         }
     }
-    public void ClickMapSelectBtn()
-    {
-        int enumCnt = Enum.GetValues(typeof(MapManager.MapType)).Length;
-        int nextMap = ((int)MapManager.Instance.CurrentMapType + 1) % (enumCnt-1);
-        MapManager.Instance.CurrentMapType = (MapManager.MapType)Enum.Parse(typeof(MapManager.MapType), nextMap.ToString());
-        mMapText.text = MapManager.Instance.CurrentMapType.ToString();
-    }
     public void ClickGameStart()
     {
         if(mIsGSkillSelect)
@@ -470,8 +485,57 @@ public class UIManager : SingleToneMaker<UIManager>
         }
         else
         {
-            
+            OpenAlertEnterPannel("최소 한개의 스킬을 선택하세요.");
         }
+    }
+    public void ClickCreditPannel()
+    {
+        mIsOpenCreditPannel = !mIsOpenCreditPannel;
+        if (mIsOpenCreditPannel)
+            ClickSound(LobbyMusicManager.AudioType.Choice);
+        else
+            ClickSound(LobbyMusicManager.AudioType.Cancel);
+        mCreditPannel.SetActive(mIsOpenCreditPannel);
+    }
+    public void ClickNamePannel(bool _isOn)
+    {
+        ClickSound(LobbyMusicManager.AudioType.Choice);
+        mCreditPannel.transform.GetChild(0).GetChild(0).gameObject.SetActive(_isOn);
+        mCreditPannel.transform.GetChild(2).gameObject.SetActive(_isOn);
+        mCreditPannel.transform.GetChild(1).GetChild(0).gameObject.SetActive(!_isOn);
+        mCreditPannel.transform.GetChild(3).gameObject.SetActive(!_isOn);
+    }
+    public void ClickNextCreditNamePannel(bool _isNext)
+    {
+        if (_isNext)
+            mCurrentNamePage++;
+        else
+            mCurrentNamePage--;
+        switch (mCurrentNamePage)
+        {
+            case 0:
+                mCreditPannel.transform.GetChild(2).GetChild(4).gameObject.SetActive(false);
+                break;
+            case 1:
+                mCreditPannel.transform.GetChild(2).GetChild(4).gameObject.SetActive(true);
+                mCreditPannel.transform.GetChild(2).GetChild(3).gameObject.SetActive(true);
+                break;
+            case 2:
+                mCreditPannel.transform.GetChild(2).GetChild(3).gameObject.SetActive(false);
+                break;
+        }
+        for (int i = 0; i < 3; i++)
+            mCreditPannel.transform.GetChild(2).GetChild(i).gameObject.SetActive(false);
+        mCreditPannel.transform.GetChild(2).GetChild(mCurrentNamePage).gameObject.SetActive(true);
+    }
+
+    // 테스트용
+    public void ClickMapSelectBtn()
+    {
+        int enumCnt = Enum.GetValues(typeof(MapManager.MapType)).Length;
+        int nextMap = ((int)MapManager.Instance.CurrentMapType + 1) % (enumCnt - 1);
+        MapManager.Instance.CurrentMapType = (MapManager.MapType)Enum.Parse(typeof(MapManager.MapType), nextMap.ToString());
+        mMapText.text = MapManager.Instance.CurrentMapType.ToString();
     }
     #endregion
 }

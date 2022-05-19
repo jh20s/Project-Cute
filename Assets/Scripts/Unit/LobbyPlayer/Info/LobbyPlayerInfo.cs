@@ -322,5 +322,18 @@ public class LobbyPlayerInfo
         }
     }
     #endregion
+    #region ADPASS
+    [SerializeField]
+    private bool mIsAdsPass;
+    public bool IsAdsPass
+    {
+        get => mIsAdsPass;
+        set
+        {
+            mIsAdsPass = value;
+            SaveLoadManager.Instance.SavePlayerInfoFile(this);
+        }
+    }
+    #endregion
     #endregion
 }

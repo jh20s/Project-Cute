@@ -221,9 +221,11 @@ public class DeongunStartManager : SingleToneMaker<DeongunStartManager>
         mWarInfo.WarRevuveValue = playerData.TrainingRevive;
         mWarInfo.WarStaffShieldTime = playerData.TrainingShieldTime;
         mWarInfo.WarMeleeDodgeCount = playerData.TrainingDodgeTime;
+        mWarInfo.IsAdsPass = playerData.IsAdsPass;
         SaveLoadManager.Instance.SavePlayerWarData(mWarInfo);
         if (mIsCutePotionCheck)
             playerData.CutePotionCount--;
+
         // 커스터마이징 정보 저장
         CustomizingManager.Instance.SaveShowHelmet();
         // 전투 씬 로드

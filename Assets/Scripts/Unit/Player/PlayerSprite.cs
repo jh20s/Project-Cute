@@ -11,15 +11,11 @@ public class PlayerSprite : MonoBehaviour
     private SpriteRenderer mFaceHairSpriteRenderer;
     [SerializeField]
     private SpriteRenderer mHairSpriteRenderer;
-    [SerializeField]
-    private Sprite mOriginHair;
 
     [SerializeField]
     private SpriteRenderer mHelmetSpriteRenderer;
     [SerializeField]
-    private Sprite mOriginHelmet;
-    [SerializeField]
-    private bool mShowHelmet = false;
+    private bool mShowHelmet;
     public bool ShowHelmet => mShowHelmet;
     [SerializeField]
     private GameObject mShowHelmetButton;
@@ -83,9 +79,6 @@ public class PlayerSprite : MonoBehaviour
         mHelmetSpriteRenderer = GameObject.Find("11_Helmet1").GetComponent<SpriteRenderer>();
 
         CustomizingManager.Instance.LoadCostumeInfo();
-        mOriginHair = mHairSpriteRenderer.sprite;
-        mOriginHelmet = mHelmetSpriteRenderer.sprite;
-        ClickShowHelmet();
     }
     // 저장되어있는 커스터마이징 정보 입히기
     public void InitSprite()
@@ -106,7 +99,8 @@ public class PlayerSprite : MonoBehaviour
         }
         if (PlayerPrefs.HasKey(ShowKey))
             mShowHelmet = bool.Parse(PlayerPrefs.GetString(ShowKey));
-
+        else
+            mShowHelmet = false;
     }
 
     // Sprite 변경
@@ -155,23 +149,20 @@ public class PlayerSprite : MonoBehaviour
     }
 
     // 투명모자
+    public void ChangeHairHelmet()
+    {
+        if(mHelmetSpriteRenderer.sprite != null)
+        {
+            mHairSpriteRenderer.enabled = mShowHelmet;
+            mHelmetSpriteRenderer.enabled = !mShowHelmet;
+        }
+
+    }
     public void ClickShowHelmet()
     {
         mShowHelmet = !mShowHelmet;
-        // 모자 보일 시
-        if (mShowHelmet)
-        {
-            mHairSpriteRenderer.sprite = null;
-            mHelmetSpriteRenderer.sprite = mOriginHelmet;
-
-        }
-        // 모자 감출 시
-        else
-        {
-            mHelmetSpriteRenderer.sprite = null;
-            mHairSpriteRenderer.sprite = mOriginHair;
-        }
-        if(mShowHelmetButton != null)
-            mShowHelmetButton.transform.GetChild(0).GetChild(0).gameObject.SetActive(!mShowHelmet);
+        ChangeHairHelmet();
+        if (mShowHelmetButton != null)
+            mShowHelmetButton.transform.GetChild(0).GetChild(0).gameObject.SetActive(mShowHelmet);
     }
 }

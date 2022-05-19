@@ -399,8 +399,7 @@ public class EquipmentManager : SingleToneMaker<EquipmentManager>
                 costumes[_name].GetComponent<Costume>().GetBuffValue(Costume.CostumeBuffType.PlayerSPD) / 100f;
 
             // 투명모자 초기화
-            if(!GameObject.Find("LobbyPlayer").GetComponent<PlayerSprite>().ShowHelmet)
-                GameObject.Find("LobbyPlayer").GetComponent<PlayerSprite>().ClickShowHelmet();
+            GameObject.Find("LobbyPlayer").GetComponent<PlayerSprite>().ChangeHairHelmet();
         }
     }
     public void ChangeCostumeShapeLobbyPlayer(string _name)
@@ -471,8 +470,7 @@ public class EquipmentManager : SingleToneMaker<EquipmentManager>
                 }
             }
             // 투명모자 초기화
-            if (!GameObject.Find("LobbyPlayer").GetComponent<PlayerSprite>().ShowHelmet)
-                GameObject.Find("LobbyPlayer").GetComponent<PlayerSprite>().ClickShowHelmet();
+            GameObject.Find("LobbyPlayer").GetComponent<PlayerSprite>().ChangeHairHelmet();
         }
     }
 
