@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "R3CN90A6ADL",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R3CN90A6ADL",
+        "name": "com.studioNNN.AgentCute",
+        "processId": 8106,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,18 @@
             "deviceId": "R3CN90A6ADL",
             "name": "com.AgentCute.unity",
             "processId": 25258,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN90A6ADL",
+            "name": "android.process.media",
+            "processId": 7544,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN90A6ADL",
+            "name": "com.studioNNN.AgentCute",
+            "processId": 8106,
             "exited": false
         }
     ],
