@@ -37,9 +37,11 @@ public class AdmobManager : SingleToneMaker<AdmobManager>
     private bool curVideoCompleteReward = false;
     public void Start()
     {
-        //Test ID : "ca-app-pub-3940256099942544/5224354917"
-        //±¤°í ID
+#if UNITY_EDITOR
         videoID = "ca-app-pub-3940256099942544/5224354917";
+#else
+        videoID = "ca-app-pub-9332050250357378/8475019061";
+#endif
         videoAd = new RewardedAd(videoID);
         Handle(videoAd);
         Load();
