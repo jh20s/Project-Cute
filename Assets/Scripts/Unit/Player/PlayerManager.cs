@@ -117,6 +117,7 @@ public class PlayerManager : SingleToneMaker<PlayerManager>
         if (loadInfo.IsBossRelay)
         {
             MapManager.Instance.CurrentMapType = MapManager.MapType.BossRelay;
+            MapManager.Instance.MapSelect();
         }
         else
         {
@@ -165,7 +166,6 @@ public class PlayerManager : SingleToneMaker<PlayerManager>
     public void SettingGameStart()
     {
         mPlayer.GetComponent<PlayerAttack>().getProjectiles();
-        //MapManager.Instance.MapSelect();
         SpawnManager.Instance.InitAllSpawnData();
 
         string weaponType =
