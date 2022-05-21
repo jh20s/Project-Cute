@@ -24,8 +24,8 @@ Achievement_22,아무런 일도 없던 것 처럼 1,Achievement_20,근거리 무
 Achievement_23,아무런 일도 없던 것 처럼 2,Achievement_21,원거리 무기를 장착하고 4번째 웨이브까지 생존,WaveClearToWeapon,5,3,1,회,GoldReward,Gold_02,350
 Achievement_24,새로운 검술의 경지,null,소드를 장착하고 몬스터 1500마리 처치,MonsterKillToWeapon,0,1500,-999,마리,SkillReward,Razing Cut,1
 Achievement_25,새로운 창술의 경지,null,스피어를 장착하고 누적 몬스터 1500마리 처치,MonsterKillToWeapon,1,1500,-999,마리,SkillReward,Assault Edge,1
-Achievement_26,더 강한 활시위,null,보우건을 장착하고 몬스터 1500마리 처치,MonsterKillToWeapon,2,1500,-999,마리,SkillReward,Arrow Burst,1
-Achievement_27,새로운 마나의 흐름,null,스태프를 장착하고 몬스터 1500마리 처치,MonsterKillToWeapon,3,1500,-999,마리,SkillReward,Burning Cannon,1
+Achievement_26,더 강한 활시위,null,보우건을 장착하고 몬스터 1600마리 처치,MonsterKillToWeapon,2,1600,-999,마리,SkillReward,Arrow Burst,1
+Achievement_27,새로운 마나의 흐름,null,스태프를 장착하고 몬스터 1600마리 처치,MonsterKillToWeapon,3,1600,-999,마리,SkillReward,Burning Cannon,1
 Achievement_28,"보스, 내 검을 받아라!",Achievement_24,소드를 장착하고 로비로 나가지 않고 보스 1단계 처치,BossKillToWeapon,0,0,1,회,SkillReward,Razing Fury,1
 Achievement_29,"보스, 내 창을 받아라!",Achievement_25,스피어를 장착하고 로비로 나가지 않고 보스 1단계 처치,BossKillToWeapon,1,0,1,회,SkillReward,Dragonic Burst,1
 Achievement_30,"보스, 내 화살을 받아라!",Achievement_26,보우건을 장착하고 로비로 나가지 않고 보스 1단계 처치,BossKillToWeapon,2,0,1,회,SkillReward,Over-rapid,1
@@ -34,10 +34,10 @@ Achievement_32,내 검을 막을 자는 아무도 없어!,Achievement_28,소드�
 Achievement_33,내 창을 막을 자는 아무도 없어!,Achievement_29,스피어를 장착하고 2번째 웨이브까지 생존,WaveClearToWeapon,1,1,1,회,SkillReward,Storm,1
 Achievement_34,내 화살을 막을 자는 아무도 없어!,Achievement_30,보우건를 장착하고 2번째 웨이브까지 생존,WaveClearToWeapon,2,1,1,회,SkillReward,Cross Fire,1
 Achievement_35,내 마법을 막을 자는 아무도 없어!,Achievement_31,스태프를 장착하고 2번째 웨이브까지 생존,WaveClearToWeapon,3,1,1,회,SkillReward,Incinerate,1
-Achievement_36,소드 마스터,Achievement_32,<소드 : 발산>스킬을 장착한 후 몬스터 35000마리 처치,MonsterKillToSkill,Sword Release,35000,-999,마리,SkillReward,Exalted Sword,1
-Achievement_37,창술의 대가,Achievement_33,<스피어 : 돌파>스킬을 장착한 후 몬스터 35000마리 처치,MonsterKillToSkill,Storm,35000,-999,마리,SkillReward,Lord Of Spear,1
-Achievement_38,보우 마스터,Achievement_34,<보우건 : 교차 사격>스킬을 장착한 후 35000몬스터 마리 처치,MonsterKillToSkill,Cross Fire,35000,-999,마리,SkillReward,Hitman,1
-Achievement_39,현자,Achievement_35,<스태프 : 소각>스킬을 장착한 후 몬스터 35000마리 처치,MonsterKillToSkill,Incinerate,35000,-999,마리,SkillReward,Apocalypse,1
+Achievement_36,소드 마스터,Achievement_32,<소드 : 발산>스킬을 장착한 후 몬스터 50000마리 처치,MonsterKillToSkill,Sword Release,50000,-999,마리,SkillReward,Exalted Sword,1
+Achievement_37,창술의 대가,Achievement_33,<스피어 : 돌파>스킬을 장착한 후 몬스터 50000마리 처치,MonsterKillToSkill,Storm,50000,-999,마리,SkillReward,Lord Of Spear,1
+Achievement_38,보우 마스터,Achievement_34,<보우건 : 교차 사격>스킬을 장착한 후 몬스터 55000마리 처치,MonsterKillToSkill,Cross Fire,55000,-999,마리,SkillReward,Hitman,1
+Achievement_39,현자,Achievement_35,<스태프 : 소각>스킬을 장착한 후 몬스터 55000마리 처치,MonsterKillToSkill,Incinerate,55000,-999,마리,SkillReward,Apocalypse,1
 Achievement_40,나를 이끌어줄 무기!(소드),null,소드를 장착하고 누적 시간 20분(1200초) 생존,SurvivorTimeToWeapon,0,1200,-999,초,WeaponReward,sw01,1
 Achievement_41,나를 이끌어줄 무기!(스피어),null,스피어를 장착하고 누적 시간 20분(1200초) 생존,SurvivorTimeToWeapon,1,1200,-999,초,WeaponReward,sp01,1
 Achievement_42,나를 이끌어줄 무기!(보우건),null,보우건을 장착하고 누적 시간 20분(1200초) 생존,SurvivorTimeToWeapon,2,1200,-999,초,WeaponReward,bg01,1
@@ -50,17 +50,17 @@ Achievement_48,단칼에 베어주마,Achievement_44,소드를 장착하고 2단
 Achievement_49,유려한 창의 흐름,Achievement_45,스피어를 장착하고 2단계 보스 15회 처치,BossKillToWeapon,1,1,15,회,WeaponReward,sp03,1
 Achievement_50,화살이 비처럼 내려와,Achievement_46,보우건을 장착하고 2단계 보스 15회 처치,BossKillToWeapon,2,1,15,회,WeaponReward,bg03,1
 Achievement_51,마나의 근원이 느껴져,Achievement_47,스태프를 장착하고 2단계 보스 15회 처치,BossKillToWeapon,3,1,15,회,WeaponReward,st03,1
-Achievement_52,더 귀여워지고 강해질거야(소드),Achievement_48,소드를 장착하고 로비로 나가지 않고 보스 3단계 10회 처치,BossKillToWeapon,0,2,10,회,WeaponReward,sw04,1
-Achievement_53,더 귀여워지고 강해질거야(스피어),Achievement_49,스피어를 장착하고 로비로 나가지 않고 보스 3단계 10회 처치,BossKillToWeapon,1,2,10,회,WeaponReward,sp04,1
-Achievement_54,더 귀여워지고 강해질거야(보우건),Achievement_50,보우건을 장착하고 로비로 나가지 않고 보스 3단계 10회 처치,BossKillToWeapon,2,2,10,회,WeaponReward,bg04,1
-Achievement_55,더 귀여워지고 강해질거야(스태프),Achievement_51,스태프를 장착하고 로비로 나가지 않고 보스 3단계 10회 처치,BossKillToWeapon,3,2,10,회,WeaponReward,st04,1
+Achievement_52,더 귀여워지고 강해질거야(소드),Achievement_48,소드를 장착하고 로비로 나가지 않고 보스 3단계 처치,BossKillToWeapon,0,2,1,회,WeaponReward,sw04,1
+Achievement_53,더 귀여워지고 강해질거야(스피어),Achievement_49,스피어를 장착하고 로비로 나가지 않고 보스 3단계 처치,BossKillToWeapon,1,2,1,회,WeaponReward,sp04,1
+Achievement_54,더 귀여워지고 강해질거야(보우건),Achievement_50,보우건을 장착하고 로비로 나가지 않고 보스 3단계 처치,BossKillToWeapon,2,2,1,회,WeaponReward,bg04,1
+Achievement_55,더 귀여워지고 강해질거야(스태프),Achievement_51,스태프를 장착하고 로비로 나가지 않고 보스 3단계 처치,BossKillToWeapon,3,2,1,회,WeaponReward,st04,1
 Achievement_56,생존의 달인 1,null,생존모드 10회 도전,ModeChallenge,0,10,-999,회,DiamondReward,Diamond_01,15
 Achievement_57,생존의 달인 2,Achievement_56,생존모드 20회 도전,ModeChallenge,0,20,-999,회,DiamondReward,Diamond_01,25
 Achievement_58,생존의 달인 3,Achievement_57,생존모드 40회 도전,ModeChallenge,0,40,-999,회,DiamondReward,Diamond_01,30
 Achievement_59,생존의 달인 4,Achievement_58,생존모드 80회 도전,ModeChallenge,0,80,-999,회,DiamondReward,Diamond_01,50
-Achievement_60,백만장자가 꿈이야 1,null,누적 재화량 20000골드 모으기,GoldCollect,20000,-999,-999,,GoldReward,Gold_02,1000
-Achievement_61,백만장자가 꿈이야 2,Achievement_60,누적 재화량 40000골드 모으기,GoldCollect,40000,-999,-999,,GoldReward,Gold_02,2000
-Achievement_62,백만장자가 꿈이야 3,Achievement_61,누적 재화량 60000골드 모으기,GoldCollect,60000,-999,-999,,GoldReward,Gold_02,4000
+Achievement_60,백만장자가 꿈이야 1,null,누적 재화량,GoldCollect,20000,-999,-999,g,GoldReward,Gold_02,1000
+Achievement_61,백만장자가 꿈이야 2,Achievement_60,누적 재화량,GoldCollect,40000,-999,-999,g,GoldReward,Gold_02,2000
+Achievement_62,백만장자가 꿈이야 3,Achievement_61,누적 재화량,GoldCollect,60000,-999,-999,g,GoldReward,Gold_02,4000
 Achievement_63,아무리 쓰러져도 일어날거야 1,null,보스 릴레이 모드 10회 도전,ModeChallenge,1,10,-999,회,GoldReward,Gold_02,200
 Achievement_64,아무리 쓰러져도 일어날거야 2,Achievement_63,보스 릴레이 모드 20회 도전,ModeChallenge,1,20,-999,회,GoldReward,Gold_02,250
 Achievement_65,아무리 쓰러져도 일어날거야 3,Achievement_64,보스 릴레이 모드 30회 도전,ModeChallenge,1,30,-999,회,GoldReward,Gold_02,280
