@@ -11,7 +11,6 @@ public class MonsterManager : SingleToneMaker<MonsterManager>
     {
         public int id;
         public MapManager.MapType monsterSpawnMap;
-        public int monsterRank;
         public string monsterColor;
         public int monsterSize;
         public string monsterType;
