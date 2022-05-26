@@ -41,7 +41,7 @@ public class AdmobManager : SingleToneMaker<AdmobManager>
 #if UNITY_EDITOR
         videoID = "ca-app-pub-3940256099942544/5224354917";
 #else
-        videoID = "ca-app-pub-9332050250357378/8475019061";
+        videoID = "ca-app-pub-9332050250357378/6538071118";
 #endif
         videoAd = new RewardedAd(videoID);
         Handle(videoAd);
