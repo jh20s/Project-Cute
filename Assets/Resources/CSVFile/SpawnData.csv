@@ -25,7 +25,7 @@ ID,SpawnMonster,MonsterRank,SpawnMap,SpawnOrder,SpawnNumber,SpawnStartTime1,Spaw
 23,Ifrit,1,Volcano,6,1,180,180,-1,120
 24,Ifrit,2,Volcano,7,1,180,180,-1,140
 25,Mimic,0,Volcano,0,1,0,60,23,-1
-26,FireDragon,0,Volcano,8,1,0,0,-1,-1
+26,FireDragon,0,Volcano,8,1,180,180,-1,-1
 27,Bat,0,Dungeon,1,4,0,0,1,-1
 28,SkeletalWarrior,0,Dungeon,2,2,45,45,1,-1
 29,Gargoyle,0,Dungeon,3,2,90,90,5,-1
