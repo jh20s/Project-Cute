@@ -383,9 +383,8 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
                 // 광고 패스 구매 시
                 if (GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.IsAdsPass)
                 {
-                    DeongunStartManager.Instance.DrawBuff();
-                    OpenDoengunPannel();
-                    GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.DailyAddCount--;
+                    mDeongunStartPannel.transform.GetChild(2).GetChild(2).gameObject.SetActive(false);
+                    DeongunStartManager.Instance.BuffDrawUI();
                 }
                 else
                 {

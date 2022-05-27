@@ -309,6 +309,8 @@ public class EquipmentManager : SingleToneMaker<EquipmentManager>
                     }
                 }
             }
+            // 투명모자 초기화
+            PlayerManager.Instance.Player.GetComponent<PlayerSprite>().ChangeHairHelmet();
         }
     }
     public void ChangeCostumeLobbyPlayer(string _name)

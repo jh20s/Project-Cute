@@ -74,10 +74,15 @@ public class DeongunStartManager : SingleToneMaker<DeongunStartManager>
     {
         if (_isEnd)
         {
-            DrawBuff();
-            LobbyUIManager.Instance.OpenDoengunPannel();
-            GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.DailyAddCount--;
+            BuffDrawUI();
         }
+    }
+    // 버프 뽑고 UI띄우는 API
+    public void BuffDrawUI()
+    {
+        DrawBuff();
+        LobbyUIManager.Instance.OpenDoengunPannel();
+        GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.DailyAddCount--;
     }
     // 무기타입에 맞는 버프셋을 리턴
     private List<DeongunBuff> MakeDeongunBuffList()
