@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Tilemap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6916797195338488108
 Transform:
@@ -66,6 +66,10 @@ PrefabInstance:
     - target: {fileID: 4315201811857859744, guid: e08d80cdc07156546a7aafdcf5b1c0a5, type: 3}
       propertyPath: m_Name
       value: BossRelayMap2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315201811857859744, guid: e08d80cdc07156546a7aafdcf5b1c0a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4359652514825745929, guid: e08d80cdc07156546a7aafdcf5b1c0a5, type: 3}
       propertyPath: m_TileAssetArray.Array.size
@@ -1028,6 +1032,10 @@ PrefabInstance:
     - target: {fileID: 698749333151026533, guid: 468bc9553fa82684f95dab75c62e3433, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 698749333151026533, guid: 468bc9553fa82684f95dab75c62e3433, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3519052475259872718, guid: 468bc9553fa82684f95dab75c62e3433, type: 3}
       propertyPath: m_Size.y
@@ -10040,6 +10048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossRelayObject3
       objectReference: {fileID: 0}
+    - target: {fileID: 1493040949744573961, guid: 4b7e3195b46bfaa4fb1e4b45451ed034, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4658943898133526913, guid: 4b7e3195b46bfaa4fb1e4b45451ed034, type: 3}
       propertyPath: m_TileAssetArray.Array.size
       value: 4
@@ -10329,6 +10341,10 @@ PrefabInstance:
     - target: {fileID: 3429133946778870166, guid: 976583f49859de44bad16236f40ab312, type: 3}
       propertyPath: m_Name
       value: BossRelayMap1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429133946778870166, guid: 976583f49859de44bad16236f40ab312, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8941816966463471691, guid: 976583f49859de44bad16236f40ab312, type: 3}
       propertyPath: m_RootOrder
@@ -76607,6 +76623,10 @@ PrefabInstance:
     - target: {fileID: 1417636881783039259, guid: d514e1127c0f1ad409492c87baf5e490, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417636881783039259, guid: d514e1127c0f1ad409492c87baf5e490, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5256433212547905641, guid: d514e1127c0f1ad409492c87baf5e490, type: 3}
       propertyPath: m_GeometryType

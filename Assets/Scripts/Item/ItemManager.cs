@@ -31,12 +31,6 @@ public class ItemManager : SingleToneMaker<ItemManager>
         createObjectPool();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public ItemData GetItemData(int num)
     {
         /*

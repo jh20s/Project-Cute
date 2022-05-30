@@ -4767,6 +4767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IceNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 3962243739788208886, guid: eced1a62a501e824caec9ed05c2b54fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4066251147007945211, guid: eced1a62a501e824caec9ed05c2b54fb, type: 3}
       propertyPath: m_RootOrder
       value: 0

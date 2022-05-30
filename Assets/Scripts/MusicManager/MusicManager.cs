@@ -62,11 +62,6 @@ public class MusicManager : SingleToneMaker<MusicManager>
             return;
         mUISource.PlayOneShot(mUISoundData[_type]);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     //mAudioClipData에 _name으로 되어있는 soundEffect 재생
     public void OneShotProjectileSound(string _name)

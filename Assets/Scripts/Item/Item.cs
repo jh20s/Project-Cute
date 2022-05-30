@@ -58,17 +58,6 @@ public class Item : MonoBehaviour
     [SerializeField]
     private int mMagnetDirection;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // 플레이어 타겟으로 따라감
     private void FixedUpdate()
     {

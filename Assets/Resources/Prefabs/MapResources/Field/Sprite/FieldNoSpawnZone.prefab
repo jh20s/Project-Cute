@@ -2383,5 +2383,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: FieldNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 7545640647716812559, guid: b74c2c01f40bfa741b04d7b2d7dd3f43, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b74c2c01f40bfa741b04d7b2d7dd3f43, type: 3}

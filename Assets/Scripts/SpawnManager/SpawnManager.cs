@@ -113,10 +113,6 @@ public class SpawnManager : SingleToneMaker<SpawnManager>
         currentKillMosterCount = 0;
         currentKillBossMonsterCount = 0;
     }
-    void Awake()
-    {
-        
-    }
 
     // Start is called before the first frame update
     void Start()

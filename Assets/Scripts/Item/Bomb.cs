@@ -14,11 +14,6 @@ public class Bomb : Item
         anim = transform.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnEnable()
     {

@@ -47,18 +47,6 @@ public class MonsterManager : SingleToneMaker<MonsterManager>
         InitAllSpawnData();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     /*
      * Pos를 인자로 넣어주면 Ingame에 있는 가장 가까운 Enemy Tag를 가진 적의 Position을 Return 시켜준다.
      */

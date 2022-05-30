@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7934846779359309345
 Transform:
@@ -47,7 +47,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &893889638692645960
 Transform:
@@ -80,7 +80,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7375406889656018229
 Transform:
@@ -113,7 +113,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7134357232129116634
 Transform:
@@ -147,7 +147,7 @@ GameObject:
   m_TagString: Tilemap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4319219792301335330
 Transform:
@@ -187,6 +187,7 @@ MonoBehaviour:
   mID: 0
   mWidth: 0
   mHeight: 0
+  mIsBossRelay: 0
 --- !u!1 &5084035909852413651
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +202,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8186468327553941702
 Transform:
@@ -234,7 +235,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8116515481333433010
 Transform:
@@ -267,7 +268,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8855197684177862203
 Transform:
@@ -300,7 +301,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5794863854672197861
 Transform:
@@ -333,7 +334,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3249677977102726873
 Transform:
@@ -487,6 +488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &4497184059131943288 stripped
@@ -504,6 +509,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -611,6 +620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
 --- !u!4 &452667381024925744 stripped
@@ -628,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -815,6 +832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &3798537622161445128 stripped
@@ -877,6 +898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
 --- !u!4 &630792422872932323 stripped
@@ -938,6 +963,10 @@ PrefabInstance:
     - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
@@ -1081,6 +1110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &3220208422720313412 stripped
@@ -1223,6 +1256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &2341832341715868587 stripped
@@ -1284,6 +1321,10 @@ PrefabInstance:
     - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
@@ -1427,6 +1468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &1946824120743637102 stripped
@@ -1488,6 +1533,10 @@ PrefabInstance:
     - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
@@ -1551,6 +1600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
 --- !u!4 &2920953349827436998 stripped
@@ -1568,6 +1621,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -1675,6 +1732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
 --- !u!4 &3842821912817193052 stripped
@@ -1692,6 +1753,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -1799,6 +1864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
 --- !u!4 &4347313275841996059 stripped
@@ -1816,6 +1885,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -2003,6 +2076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &8237918122035519857 stripped
@@ -2020,6 +2097,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -2207,6 +2288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &6485184574825116941 stripped
@@ -2349,6 +2434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
 --- !u!4 &6212625699156349200 stripped
@@ -2366,6 +2455,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -2429,6 +2522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolcanoBackground1
       objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2490,6 +2587,10 @@ PrefabInstance:
     - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_Name
       value: VolcanoBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813577031764270638, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8745446520463216057, guid: 5d7504f0bbe42b048ba633f57930a1fa, type: 3}
       propertyPath: m_RootOrder
@@ -2596,6 +2697,10 @@ PrefabInstance:
     - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
       propertyPath: m_Name
       value: VolcanoNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 581194780371254099, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b68c357bccdef94e8eed921f44a0cfd, type: 3}
@@ -2738,6 +2843,10 @@ PrefabInstance:
     - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
       propertyPath: m_Name
       value: VolcanoObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463456668461307507, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8abe1657e510942bfa2f2a5fa53378, type: 3}

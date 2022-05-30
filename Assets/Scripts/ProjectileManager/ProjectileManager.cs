@@ -22,10 +22,7 @@ public class ProjectileManager : SingleToneMaker<ProjectileManager>
     {
         initAllProjectiles();
     }
-    private void Update()
-    {
-        
-    }
+
     public void initAllProjectiles()
     {
         // Projectiles 프리펩을 불러온다

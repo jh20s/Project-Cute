@@ -5,16 +5,6 @@ using UnityEngine;
 public class MonsterEventHandler : IEventHandler
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public override void ChangeIsDie(bool _dieCheck, GameObject _obj)
     {

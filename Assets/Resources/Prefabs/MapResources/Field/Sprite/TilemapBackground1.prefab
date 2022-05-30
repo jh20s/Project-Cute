@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Tilemap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6330816957508091183
 Transform:
@@ -4939,6 +4939,10 @@ PrefabInstance:
     - target: {fileID: 9052158255990836434, guid: e67e55cfc6be5f54890fb07a4d3da30c, type: 3}
       propertyPath: m_Name
       value: Tilemap (Object)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052158255990836434, guid: e67e55cfc6be5f54890fb07a4d3da30c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9052158255990836445, guid: e67e55cfc6be5f54890fb07a4d3da30c, type: 3}
       propertyPath: m_RootOrder

@@ -65,17 +65,6 @@ public class Skill : MonoBehaviour
     #endregion
 
     #region method
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void BuffOn(GameObject _obj)
     {

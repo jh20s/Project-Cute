@@ -30,17 +30,6 @@ public class PlayerUI : IUI
         mPauseLevelText = GameObject.Find("Canvas").transform.Find("PausePannel").transform.GetChild(0).GetChild(1).GetComponent<Text>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void RegisterGoldObserver(int _gold)
     {
         mGoldText.text = _gold + "g";

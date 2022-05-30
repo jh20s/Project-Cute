@@ -65,13 +65,7 @@ public class PlayerStatus : IStatus
 
     }
 
-    void Update()
-    {
-
-    }
-
-
-    public override bool AttackPointSetting(GameObject _obj)
+     public override bool AttackPointSetting(GameObject _obj)
     {
         // 추후에 무기별 계수를 데이터로 받아와서 조정
         float ran = UnityEngine.Random.Range(0.8f, 1.2f);

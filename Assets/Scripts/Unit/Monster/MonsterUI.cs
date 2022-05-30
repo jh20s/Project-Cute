@@ -9,10 +9,6 @@ public class MonsterUI : IUI
     private string BossIconName2 = "Boss_Icon02";
     private string Icon;
     // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     private void OnEnable()
     {
         mStatusObject = GameObject.Find("MonsterStatusObject");

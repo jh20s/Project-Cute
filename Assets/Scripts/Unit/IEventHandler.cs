@@ -225,15 +225,4 @@ public class IEventHandler : MonoBehaviour
         IsLaunchObserverEvent?.Invoke(_state, _obj);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

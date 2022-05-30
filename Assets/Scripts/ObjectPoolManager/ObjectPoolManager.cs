@@ -13,17 +13,6 @@ public class ObjectPoolManager : SingleToneMaker<ObjectPoolManager>
         }
     }
 
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void CreateDictTable(GameObject objectPrfab)
     {
         CreateDictTable(objectPrfab, 5, 0);

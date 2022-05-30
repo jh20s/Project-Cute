@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777011001703
 Transform:
@@ -48,7 +48,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777053836516
 Transform:
@@ -82,7 +82,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777305584412
 Transform:
@@ -116,7 +116,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777409475761
 Transform:
@@ -150,7 +150,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777419741170
 Transform:
@@ -184,7 +184,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777499689119
 Transform:
@@ -218,7 +218,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777618077388
 Transform:
@@ -252,7 +252,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777667249965
 Transform:
@@ -287,7 +287,7 @@ GameObject:
   m_TagString: Tilemap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777856817708
 Transform:
@@ -327,6 +327,7 @@ MonoBehaviour:
   mID: 0
   mWidth: 0
   mHeight: 0
+  mIsBossRelay: 0
 --- !u!1 &7588276777902749438
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +342,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7588276777902749433
 Transform:
@@ -416,6 +417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
 --- !u!4 &1877339612006020625 stripped
@@ -477,6 +482,10 @@ PrefabInstance:
     - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
       propertyPath: m_Name
       value: DungeonNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
@@ -540,6 +549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
 --- !u!4 &5830307417245661632 stripped
@@ -601,6 +614,10 @@ PrefabInstance:
     - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
       propertyPath: m_Name
       value: DungeonNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
@@ -664,6 +681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
 --- !u!4 &4938607678009963514 stripped
@@ -681,6 +702,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -851,6 +876,10 @@ PrefabInstance:
     - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
       propertyPath: m_Name
       value: DungeonBackground2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
@@ -1154,6 +1183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822727376240686 stripped
@@ -1171,6 +1204,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -1342,6 +1379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonBackground2
       objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
 --- !u!4 &5205378802831038158 stripped
@@ -1359,6 +1400,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -1421,6 +1466,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -1592,6 +1641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonBackground2
       objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
 --- !u!4 &5205378802913584193 stripped
@@ -1609,6 +1662,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -1671,6 +1728,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -1842,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonBackground2
       objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
 --- !u!4 &5205378803826711981 stripped
@@ -1967,6 +2032,10 @@ PrefabInstance:
     - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
       propertyPath: m_Name
       value: DungeonBackground2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
@@ -2270,6 +2339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822729016508292 stripped
@@ -2287,6 +2360,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -2634,6 +2711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822728847550842 stripped
@@ -2655,6 +2736,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -3002,6 +3087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822729269971774 stripped
@@ -3304,6 +3393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822729166149073 stripped
@@ -3429,6 +3522,10 @@ PrefabInstance:
     - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
       propertyPath: m_Name
       value: DungeonBackground2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
@@ -3732,6 +3829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822728272146909 stripped
@@ -3857,6 +3958,10 @@ PrefabInstance:
     - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
       propertyPath: m_Name
       value: DungeonBackground2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
@@ -4160,6 +4265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822728685386835 stripped
@@ -4462,6 +4571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822728751044767 stripped
@@ -4587,6 +4700,10 @@ PrefabInstance:
     - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
       propertyPath: m_Name
       value: DungeonBackground2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
@@ -4722,6 +4839,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5934770934099730157, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bfe40b14850b94384064a47810e6d8, type: 3}
 --- !u!4 &5205378803930033883 stripped
@@ -4739,6 +4860,10 @@ PrefabInstance:
     - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_Name
       value: DungeonBackground1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836472130970386773, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5999713659588781485, guid: 413a791ec462f1040ad2c8cbdce0716b, type: 3}
       propertyPath: m_RootOrder
@@ -5086,6 +5211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9217721586062766479, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb29057acce8d6841abe09bfb2e32dcf, type: 3}
 --- !u!4 &1047822728601045624 stripped
@@ -5148,6 +5277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
 --- !u!4 &8713059852809572817 stripped
@@ -5209,6 +5342,10 @@ PrefabInstance:
     - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
       propertyPath: m_Name
       value: DungeonNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
@@ -5276,6 +5413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonNoSpawnZone
       objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
 --- !u!4 &7005784434387101513 stripped
@@ -5337,6 +5478,10 @@ PrefabInstance:
     - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
       propertyPath: m_Name
       value: DungeonNoSpawnZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219679957240681891, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3a34ebbe99ccd48acd958f38012b9e, type: 3}

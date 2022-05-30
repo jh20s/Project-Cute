@@ -22,12 +22,6 @@ public class GameManager : MonoBehaviour
         mTitleImage.transform.GetChild(ran).gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadTestLobbyScene()
     {
         if (PlayerPrefs.HasKey("Info"))

@@ -67,11 +67,6 @@ public class PlayerManager : SingleToneMaker<PlayerManager>
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void AutoReviveValueDiscount()
     {
         mAutoReviveValue--;
