@@ -71,6 +71,8 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
     private GameObject mSupportItemPannel;
     [SerializeField]
     private GameObject mDeongunStartPannel;
+    [SerializeField]
+    private GameObject mStoryPannel;
 
     [Header("플레이어 정보창")]
     [SerializeField]
@@ -569,6 +571,27 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
                 break;
         }
         mGachaItemListPannel.SetActive(true);
+    }
+    public void OpenStoryPannel(int num)
+    {
+        string textline = "";
+        switch (num)
+        {
+            case 0:
+                textline = "몇 백년 동안 인간과 여러 종족 간의 평화가 지속되었다.\n하지만 언제부터인가 인간들의 귀여움과 지혜를 시기하는 종족들이 나타났다.\n배신 세력이 커염 왕국의 귀여운 백성들을 공격하려는 지금, 정예 요원으로 하여금 적의 군단과 우두머리를 처치하라.";
+                break;
+            case 1:
+                textline = "왕국의 작전을 수행하는 정예 요원이 귀엽다는 기밀(?)이 유출되었다....\n역시 이 모든 것은 내가 너무 귀여운 탓..인가\n귀여운 정예 요원을 공격해 오는 적의 수장들을 물리치고 살아남아라.";
+                break;
+        }
+        mStoryPannel.transform.GetChild(0).GetComponent<Text>().text = textline;
+        ClickSound(LobbyMusicManager.AudioType.Choice);
+        mStoryPannel.SetActive(true);
+    }
+    public void CloseStoryPannel()
+    {
+        ClickSound(LobbyMusicManager.AudioType.Cancel);
+        mStoryPannel.SetActive(false);
     }
     public void CloseGachItemListPannel()
     {
