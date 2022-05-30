@@ -60,8 +60,13 @@ public class IAPManager : MonoBehaviour
     IEnumerator BuyAdsPassSuccess()
     {
         yield return new WaitForEndOfFrame();
-        if(!GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.IsAdsPass)
+        if (!GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.IsAdsPass)
+        {
             GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.IsAdsPass = true;
-        mPassPannel.SetActive(true);
+            GameObject.Find("LobbyPlayer").GetComponent<LobbyPlayerData>().Info.Gold += 3000;
+            mPassPannel.SetActive(true);
+        }
+            
+        
     }
 }
