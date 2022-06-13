@@ -95,7 +95,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: fe62e704f255db2478b8d73cb6e6a8ce, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -121,3 +121,7 @@ MonoBehaviour:
   mGold: 0
   mScale: 0
   mMustDrop: 0
+  mIsMagnetOn: 0
+  mMagnetSpeed: 0
+  mDistanceStretch: 0
+  mMagnetDirection: 0

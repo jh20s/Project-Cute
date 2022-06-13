@@ -100,7 +100,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 8b083a06786d30c408a5bfa9196ecbfa, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -141,9 +141,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe2bb2b71af77746ac31995884155c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePosition: {fileID: 0}
+  mObjectDamage: 0
+  mProjectileCount: 0
+  mProjectileScale: 0
+  mStiffTime: 0
+  mRAttackCount: 0
+  mPassCount: 0
+  mFirePosition: {fileID: 0}
   mAutoAttackSpeed: 0
   currentBaseSkill: {fileID: 0}
+  mIsRush: 0
+  mRushDir: {x: 0, y: 0, z: 0}
+  mRushSpeed: 0
+  DEBUG_SKILL_NUMBER: -1
+  mCloseAttackPower: 0
+  mBerserkerModeScale: 0
+  mMonsterSkill: []
+  mSkillCheckCoolTime: []
 --- !u!114 &784515273462323900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mSpeed: 0
   mDir: {x: 0, y: 0, z: 0}
+  mMoveable: 1
+  mTarget: {fileID: 0}
+  mIsDie: 0
 --- !u!114 &5050403516011992865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,21 +189,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mHp: 0
   mMaxHp: 0
+  mIsDie: 0
+  mSize: 0
+  mCloseDamaged: 0
   mDamaged: 0
   mPotionHp: 0
-  mSpeedRate: 1
-  mSpeed: 0
+  mMoveSpeed: 0
+  mMoveSpeedRate: 1
+  mAddSpeed: 0
+  mAttackSpeed: 0
+  mAddAttackSpeed: 0
   mBaseDamage: 0
+  currentWeapon: {fileID: 0}
+  mAddAttackPoint: 0
+  mObjectDamage: 0
+  mCriticalChance: 0
+  mAddCriticalChance: 0
+  mCriticalDamage: 0
+  mAddProjectileCount: 0
+  mAddAttackRange: 0
+  mAddStiffTime: 0
+  mAddRAttackCount: 0
+  mAddPassCount: 0
+  mIsLaunch: 0
   mPhysicalDefense: 0
   mMagicDefense: 0
   mIsInvincibility: 0
-  mSize: 0
-  currentWeapon: {fileID: 0}
   mId: 0
   mSpawnMap: 
   mMonsterInName: 
-  mIsDieToKillCount: 0
-  mIsDieToGetExp: 0
   mMonsterGrade: 0
 --- !u!114 &-8297877870601922992
 MonoBehaviour:
@@ -216,7 +247,7 @@ BoxCollider2D:
   m_Offset: {x: 0.018309236, y: -0.2178796}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.3}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5

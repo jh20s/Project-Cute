@@ -132,7 +132,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6c4eb01ca12e11b45b8e2bbac86627b9, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -158,10 +158,17 @@ MonoBehaviour:
   mStiffTime: 0
   mRAttackCount: 0
   mPassCount: 0
-  firePosition: {fileID: 0}
+  mFirePosition: {fileID: 0}
   mAutoAttackSpeed: 0
   currentBaseSkill: {fileID: 0}
+  mIsRush: 0
+  mRushDir: {x: 0, y: 0, z: 0}
+  mRushSpeed: 0
+  DEBUG_SKILL_NUMBER: -1
+  mCloseAttackPower: 0
+  mBerserkerModeScale: 0
   mMonsterSkill: []
+  mSkillCheckCoolTime: []
 --- !u!114 &8282874025787267694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +196,8 @@ MonoBehaviour:
   mSpeed: 0
   mDir: {x: 0, y: 0, z: 0}
   mMoveable: 1
+  mTarget: {fileID: 0}
+  mIsDie: 0
 --- !u!114 &7276914924729092071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mHp: 0
   mMaxHp: 0
+  mIsDie: 0
   mSize: 0
   mCloseDamaged: 0
   mDamaged: 0
@@ -231,8 +241,6 @@ MonoBehaviour:
   mId: 0
   mSpawnMap: 
   mMonsterInName: 
-  mIsDieToKillCount: 0
-  mIsDieToGetExp: 0
   mMonsterGrade: 0
 --- !u!114 &3744966485742042716
 MonoBehaviour:
@@ -285,7 +293,7 @@ BoxCollider2D:
   m_Offset: {x: -0.12050432, y: -0.68594974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.15}
     oldSize: {x: 6, y: 3}
     newSize: {x: 6, y: 3}
     adaptiveTilingThreshold: 0.5
