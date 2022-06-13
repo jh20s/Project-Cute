@@ -11,3 +11,7 @@ ID,BossMonster,MonsterRank,BossLimitTime,SpeedUp,PowerUp
 9,Wendigo,0,110,2,2
 10,Wendigo,1,120,2,2
 11,Wendigo,2,130,2,2
+12,FieldDragon,0,200,2,1
+13,IceDragon,0,200,2,1
+14,FireDragon,0,200,2,1
+15,DarkDragon,0,200,2,1
