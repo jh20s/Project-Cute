@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
 {
+    private static float DELTA_TIME = 0.022f;
     // Start is called before the first frame update
     #region Pannel
     [Header("일시정지")]
@@ -134,7 +135,7 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
     void Start()
     {
         Time.timeScale = 1;
-        Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        Time.fixedDeltaTime = DELTA_TIME * Time.timeScale;
     }
     private void ClickSound(LobbyMusicManager.AudioType _type)
     {
@@ -170,7 +171,7 @@ public class LobbyUIManager : SingleToneMaker<LobbyUIManager>
     {
         Time.timeScale = Convert.ToInt32(mIsPause);
         mIsPause = !mIsPause;
-        Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        Time.fixedDeltaTime = DELTA_TIME * Time.timeScale;
         mBackGroundPannel.SetActive(mIsPause);
     }
     public void ClickMenuButton()

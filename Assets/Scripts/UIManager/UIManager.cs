@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using System;
 public class UIManager : SingleToneMaker<UIManager>
 {
+    private static float DELTA_TIME = 0.022f;
     #region variables
     [Header("일시정지")]
     [SerializeField]
@@ -381,14 +382,14 @@ public class UIManager : SingleToneMaker<UIManager>
     private void GamePause()
     {
         Time.timeScale = 0;
-        Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        Time.fixedDeltaTime = DELTA_TIME * Time.timeScale;
         mPauseBtn.SetActive(false);
         mBackGroundPannel.SetActive(true);
     }
     public void GameRestart()
     {
         Time.timeScale = 1;
-        Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        Time.fixedDeltaTime = DELTA_TIME * Time.timeScale;
         mPauseBtn.SetActive(true);
         mBackGroundPannel.SetActive(false);
     }
