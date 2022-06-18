@@ -1,4 +1,4 @@
-# Agent Cute : Action Survivors
+# Pixel Warrior : Action Survivors
 > 로그라이크 장르의 액션서바이버게임
 
 ## 설치방법
