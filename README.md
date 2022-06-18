@@ -1,15 +1,8 @@
 # Agent Cute : Action Survivors
 > 로그라이크 장르의 액션서바이버게임
 
-## 게임 플레이 화면
-
-유튜브 링크로 대체 예정
-
 ## 설치방법
-
-```sh
-구글스토어 업로드 완료시 링크 올릴예정
-```
+[구글 스토어 링크](https://play.google.com/store/apps/details?id=com.studioNNN.PixelWarrior)
 
 ## 개발 기간
 * 2022.3.20~ 2022. 5.18
