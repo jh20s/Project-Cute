@@ -17,7 +17,7 @@
 
 * [Unit 구조](./Docs/unit/Unit.md)
 
-* [몬스터 스폰 구조](./Docs/unit/Spawn.md)
+* [몬스터 스폰 구조](./Docs/spawn/Spawn.md)
 
 * [Skill, Projectile 구조](./Docs/skill/Skill.md)
 
